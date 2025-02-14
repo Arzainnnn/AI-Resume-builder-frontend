@@ -19,7 +19,7 @@ import {
 import React, { useState } from "react";
 import { MoreVertical } from "lucide-react";
 import { Loader2Icon } from "lucide-react";
-import GlobalAPI from "../../../../../service/GlobalAPI";
+import GlobalAPI from "../../../../service/GlobalAPI";
 
 const ResumeCard = ({ resume, refreshData }) => {
   const navigation = useNavigate();

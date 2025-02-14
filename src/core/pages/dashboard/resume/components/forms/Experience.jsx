@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { RichTextEditor } from "@/core/components";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
-import GlobalApi from "./../../../../../../../service/GlobalAPI";
+import GlobalApi from "../../../../../../service/GlobalAPI";
 
 const defaultExperience = {
   title: "",

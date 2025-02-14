@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import GlobalAPI from "../../../../../../../service/GlobalAPI";
+import GlobalAPI from "../../../../../../service/GlobalAPI";
 import { FormSelection, ResumePreview } from "../../components";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 

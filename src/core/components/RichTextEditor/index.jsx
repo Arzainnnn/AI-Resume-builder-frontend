@@ -15,7 +15,7 @@ import {
   BtnStrikeThrough,
 } from "react-simple-wysiwyg";
 import { toast } from "sonner";
-import { aiChatSession } from "./../../../../service/AIModal";
+import { aiChatSession } from "../../../service/AIModal";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 
 const PROMPT =
