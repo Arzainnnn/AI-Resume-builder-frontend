@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LoaderCircle } from "lucide-react";
+import GlobalApi from "@/service/globalApi";
 import { useParams } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { RichTextEditor } from "@/core/components";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
-import GlobalApi from "../../../../../../service/globalApi";
 
 const defaultExperience = {
   title: "",

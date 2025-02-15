@@ -5,10 +5,10 @@ import { Copy } from "lucide-react";
 import { Download } from "lucide-react";
 import { Header } from "@/core/components";
 import { Share2Icon } from "lucide-react";
+import GlobalApi from "@/service/globalApi";
 import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import GlobalAPI from "../../../../../service/globalApi";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 import { ResumePreview } from "@/core/pages/dashboard/resume/components";
 
@@ -39,7 +39,7 @@ const ViewResume = () => {
   };
 
   const getResumeDetails = () => {
-    GlobalAPI.GetResumeById(resumeId)
+    GlobalApi.GetResumeById(resumeId)
       .then((resp) => setResumeInfo(resp?.data?.data))
       .catch((err) => console.log(err));
   };

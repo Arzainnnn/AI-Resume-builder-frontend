@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import "@smastrom/react-rating/style.css";
+import GlobalApi from "@/service/globalApi";
 import { useParams } from "react-router-dom";
 import { Rating } from "@smastrom/react-rating";
 import React, { useContext, useEffect, useState } from "react";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
-import GlobalApi from "../../../../../../service/globalApi";
 import { LoaderCircle } from "lucide-react";
 
 const defaultSkills = {

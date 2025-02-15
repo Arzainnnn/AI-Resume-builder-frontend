@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
+import GlobalAPI from "@/service/globalApi";
 import { AddResume, ResumeCard } from "./components";
-import GlobalAPI from "../../../service/globalApi";
 
 const Dashboard = () => {
   const { user } = useUser();

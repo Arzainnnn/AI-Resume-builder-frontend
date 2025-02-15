@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LoaderCircle } from "lucide-react";
+import GlobalApi from "@/service/globalApi";
 import { useParams } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
-import GlobalApi from "../../../../../../service/globalApi";
 
 const defaultEducation = {
   universityName: "",
