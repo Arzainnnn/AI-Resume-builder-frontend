@@ -8,7 +8,7 @@ import {
 import { LayoutGrid } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import GlobalApi from "../../../service/GlobalApi";
+import GlobalApi from "../../../service/globalApi";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 
 const colors = [
