@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useUser } from "@clerk/clerk-react";
-import GlobalAPI from "@/service/globalApi";
+import GlobalApi from "@/service/globalApi";
 import { useNavigate } from "react-router-dom";
 
 const AddResume = ({ refreshData }) => {
@@ -32,7 +32,7 @@ const AddResume = ({ refreshData }) => {
         user_email: user?.primaryEmailAddress?.emailAddress,
       },
     };
-    GlobalAPI.CreateNewResume(data).then(
+    GlobalApi.CreateNewResume(data).then(
       (resp) => {
         if (resp) {
           setLoading(false);

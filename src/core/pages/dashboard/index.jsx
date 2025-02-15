@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useUser } from "@clerk/clerk-react";
-import GlobalAPI from "@/service/globalApi";
+import GlobalApi from "@/service/globalApi";
 import { AddResume, ResumeCard } from "./components";
 
 const Dashboard = () => {
@@ -10,7 +10,7 @@ const Dashboard = () => {
   const userEmail = user?.primaryEmailAddress?.emailAddress;
 
   const GetResumeList = () => {
-    GlobalAPI.GetResumes(userEmail).then((resp) => {
+    GlobalApi.GetResumes(userEmail).then((resp) => {
       setResumeList(resp?.data?.data);
     });
   };

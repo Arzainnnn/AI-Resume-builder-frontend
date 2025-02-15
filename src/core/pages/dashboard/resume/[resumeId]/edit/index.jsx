@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import GlobalAPI from "@/service/globalApi";
+import GlobalApi from "@/service/globalApi";
 import { FormSelection, ResumePreview } from "../../components";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 
@@ -13,7 +13,7 @@ const EditResume = () => {
   }, []);
 
   const getResumeDetails = () => {
-    GlobalAPI.GetResumeById(resumeId).then((resp) =>
+    GlobalApi.GetResumeById(resumeId).then((resp) =>
       setResumeInfo(resp?.data?.data)
     );
   };

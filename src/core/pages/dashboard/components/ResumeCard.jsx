@@ -19,7 +19,7 @@ import {
 import React, { useState } from "react";
 import { MoreVertical } from "lucide-react";
 import { Loader2Icon } from "lucide-react";
-import GlobalAPI from "@/service/globalApi";
+import GlobalApi from "@/service/globalApi";
 
 const ResumeCard = ({ resume, refreshData }) => {
   const navigation = useNavigate();
@@ -28,7 +28,7 @@ const ResumeCard = ({ resume, refreshData }) => {
 
   const onDelete = () => {
     setLoading(true);
-    GlobalAPI.DeleteResumeById(resume.documentId).then(
+    GlobalApi.DeleteResumeById(resume.documentId).then(
       (resp) => {
         refreshData();
         setLoading(false);
