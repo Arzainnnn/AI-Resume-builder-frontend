@@ -4,7 +4,7 @@ import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Brain, LoaderCircle } from "lucide-react";
-import GlobalAPI from "../../../../../../service/GlobalAPI";
+import GlobalAPI from "../../../../../../service/globalApi";
 import { aiChatSession } from "../../../../../../service/AIModal";
 import { toast } from "sonner";
 

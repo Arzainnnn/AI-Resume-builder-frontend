@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { Rating } from "@smastrom/react-rating";
 import React, { useContext, useEffect, useState } from "react";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
-import GlobalApi from "../../../../../../service/GlobalAPI";
+import GlobalApi from "../../../../../../service/globalApi";
 import { LoaderCircle } from "lucide-react";
 
 const defaultSkills = {

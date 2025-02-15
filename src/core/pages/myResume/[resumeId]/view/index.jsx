@@ -8,7 +8,7 @@ import { Share2Icon } from "lucide-react";
 import { useParams } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import GlobalAPI from "../../../../../service/GlobalAPI";
+import GlobalAPI from "../../../../../service/globalApi";
 import { ResumeInfoContext } from "@/context/ResumeInfoContext";
 import { ResumePreview } from "@/core/pages/dashboard/resume/components";
 

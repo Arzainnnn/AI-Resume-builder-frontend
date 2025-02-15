@@ -11,7 +11,7 @@ import { v4 as uuidv4 } from "uuid";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useUser } from "@clerk/clerk-react";
-import GlobalAPI from "../../../../service/GlobalAPI";
+import GlobalAPI from "../../../../service/globalApi";
 import { useNavigate } from "react-router-dom";
 
 const AddResume = ({ refreshData }) => {
